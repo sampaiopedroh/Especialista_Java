@@ -1,4 +1,4 @@
-package UNI_4;
+package UNI_4.Part_I;
 
 public class Principal {
     public static void main(String[] args) {
@@ -27,6 +27,9 @@ public class Principal {
         seuCarro.proprietario.nome = "Andrade";
         seuCarro.proprietario.anoNascimento = 1983;
         seuCarro.proprietario.cpf = "315.337.888-64";
+
+//        double ipva = meuCarro.calcularIpva();
+//        System.out.println(ipva);
 
         meuCarro.imprimirResumoDepreciacao();
         System.out.println();

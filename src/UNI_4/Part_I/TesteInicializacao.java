@@ -1,4 +1,4 @@
-package UNI_4;
+package UNI_4.Part_I;
 
 public class TesteInicializacao {
     public static void main(String[] args) {
