@@ -21,6 +21,6 @@ public class CalculaPagamentos {
 		float salarioLiquido = valorHora * horasTrabalhadas;
 		float salarioBruto = salarioLiquido - valorDescontos;
 
-		System.out.printf("Folha de pagamento: %s%n%d horas x R$%f = %f%nDescontos: R$%f%nTotal devido: R$%f", nome, horasTrabalhadas, valorHora, salarioLiquido, valorDesconto, salarioBruto);
+		System.out.printf("Folha de pagamento: %s%n%d horas x R$%f = %f%nDescontos: R$%f%nTotal devido: R$%f", nome, horasTrabalhadas, valorHora, salarioLiquido, valorDescontos, salarioBruto);
 	}
 }

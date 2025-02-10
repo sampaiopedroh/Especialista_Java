@@ -21,7 +21,7 @@ public class SimuladorEmprestimo {
 			case 1, 2 -> 1.99;
 			case 3 -> 2.99;
 			default -> 3.99;
-		}
+		};
 
 		double tarifaFixa = valorEmprestimo >= 100 ? 1.5 : 0;
 		double totalJuros = valorEmprestimo * (taxaJuros / 100 * quantidadeParcelas);

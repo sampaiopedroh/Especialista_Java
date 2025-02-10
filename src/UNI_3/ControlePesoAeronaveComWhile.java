@@ -13,8 +13,8 @@ public class ControlePesoAeronaveComWhile {
 
 		boolean incluirNovoPassageiro = true;
 
-		while (somaPesoPassageiros <= totalMaximo && incluirNovoPassageiro) {
-			System.out.printf("Peso do passageiro: ");
+		while (somaPesoPassageiros <= pesoMaximo && incluirNovoPassageiro) {
+			System.out.println("Peso do passageiro: ");
 			int pesoPassageiro = entrada.nextInt();
 
 			somaPesoPassageiros += pesoPassageiro;
@@ -26,6 +26,6 @@ public class ControlePesoAeronaveComWhile {
 		System.out.printf("Peso máximo da aeronave: %d kg%n", pesoMaximo);
 		System.out.printf("Peso total dos passageiros: %d kg%n", somaPesoPassageiros);
 		System.out.printf("Sistuação da aeronave: %s%n", 
-		somaPesoPassageiros > pesoMaximo ? : "Peso excedido" : "Tudo certo");
+		somaPesoPassageiros > pesoMaximo ? "Peso excedido" : "Tudo certo");
 	}
 }

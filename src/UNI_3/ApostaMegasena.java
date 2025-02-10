@@ -6,11 +6,11 @@ public class ApostaMegasena {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 
-		int quantidadeNumeros = 0;
+		int quantidadeNumeros;
 
 		do {
 			System.out.print("Quantos números você quer apostar ? ");
-			quantidadeNumero = entrada.nextInt();
+			quantidadeNumeros = entrada.nextInt();
 
 			if (quantidadeNumeros < 6 || quantidadeNumeros > 15) {
 				System.out.println("Quantidade permitida é entre 6 e 15");
@@ -18,7 +18,7 @@ public class ApostaMegasena {
 		} while (quantidadeNumeros < 6 || quantidadeNumeros > 15 );
 		
 		int numeroAtual = 1;
-		String numerosEcolhidos = "";
+		String numerosEscolhidos = "";
 		do {
 			System.out.printf("Diga o n˚%d: ", numeroAtual);
 			int numeroEscolhido = entrada.nextInt();
@@ -26,7 +26,7 @@ public class ApostaMegasena {
 			if (numeroEscolhido < 1 || numeroEscolhido > 60) {
 				System.out.println("Número deve ser de 1 a 60");
 			} else {
-			numerosEcolhidos += numeroEscolhido + " ";
+			numerosEscolhidos += numeroEscolhido + " ";
 
 			numeroAtual++;
 			}

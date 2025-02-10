@@ -2,7 +2,7 @@ package UNI_3;
 
 import java.util.Scanner;
 
-public class ExamaVitaminaD {
+public class ExameVitaminaD {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 
@@ -15,7 +15,7 @@ public class ExamaVitaminaD {
 		// Desejável: > 20 ng/mL
 		// Grupo de risco: 30<x>60 ng/mL
 		
-		boolean vitaminaDNormal = (!grupoDeRisca && vitaminaD > 20) || (grupoDeRisco && vitaminaD >= 30 && vitaminaD <= 60);
+		boolean vitaminaDNormal = (!grupoDeRisco && vitaminaD > 20) || (grupoDeRisco && vitaminaD >= 30 && vitaminaD <= 60);
 		// grupoDeRisco == false é igual a !grupoDeRisco
 		// grupoDeRisco == true é igual a grupoDeRisco
 

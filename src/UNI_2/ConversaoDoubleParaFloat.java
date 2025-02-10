@@ -9,7 +9,7 @@ public class ConversaoDoubleParaFloat {
 		System.out.println(peso2);
 	
 		// Já para tipos menores para maiores, não é necessário passar a instrução pois já é feito um casting automático
-		float taxa1 = 19.9;
+		float taxa1 = 19.9F;
 		double taxa2 = taxa1;
 		System.out.println(taxa1);
 		System.out.println(taxa2);
