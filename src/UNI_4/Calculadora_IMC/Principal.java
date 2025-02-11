@@ -1,17 +1,14 @@
 package UNI_4.Calculadora_IMC;
 
-import java.util.Scanner;
-
 public class Principal {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        Paciente paciente = new Paciente();
-        System.out.println("Diga a sua altura: ");
-        paciente.altura = entrada.nextDouble();
-        System.out.println("Diga o seu peso: ");
-        paciente.peso = entrada.nextDouble();
+        CalculadoraImc calculadoraImc = new CalculadoraImc();
+        Paciente pedro = new Paciente();
 
-        IndiceMassaCorporal imc = new IndiceMassaCorporal();
+        pedro.altura = 1.7;
+        pedro.peso = 75;
+
+        IndiceMassaCorporal imc = calculadoraImc.calcular(pedro);
 
         if (imc.estaComObesidade()) {
             System.out.printf("Pacientecom alura de %.2f e peso de %.2f" +
