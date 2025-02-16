@@ -1,10 +1,16 @@
 package UNI_4.Exercicios_02;
 
 public class FolhaPagamento {
-    double calcularSalario(DadosFuncionario funcionario) {
-        double valorHorasTrabalhadas = funcionario.horasTrabalhadas * funcionario.valorHora;
-        double valorHorasExtrasTrabalhadas = funcionario.horasExtras * funcionario.valorHoraExtra;
+        Holerite calcularSalario(int horasTrabalhadas, int horasExtrasTrabalhadas, ContratoTrabalho contrato) {
+            Holerite holerite = new Holerite();
+            holerite.valorTotalHoras = contrato.valorHoras * horasTrabalhadas;
+            holerite.valorTotalHorasExtras = contrato.valorHorasExtras * horasExtrasTrabalhadas;
+            holerite.funcionario = contrato.funcionario;
 
-        double salario = valorHorasTrabalhadas + valorHorasExtrasTrabalhadas;
-    }
+            if (contrato.temAdicionalFilhos()) {
+                holerite.adicioalFilhos = (holerite.valorTotalHoras + holerite.valorTotalHorasExtras) / 10;
+            }
+
+            return holerite;
+        }
 }
