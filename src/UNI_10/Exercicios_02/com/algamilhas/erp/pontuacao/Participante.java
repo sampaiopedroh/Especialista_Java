@@ -17,7 +17,7 @@ public class Participante {
 
     public void creditarPontos(int pontos) {
         if (pontos < 0) {
-            throw new IllegalArgumentException("Não pode ser atribuído pontos negativos")
+            throw new IllegalArgumentException("Não pode ser atribuído pontos negativos");
         }
         this.saldoDePontos += pontos;
     }
