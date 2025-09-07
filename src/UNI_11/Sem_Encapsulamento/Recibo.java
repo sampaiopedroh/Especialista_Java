@@ -1,4 +1,4 @@
-package UNI_11.FaltaDeEncapsulamento;
+package UNI_11.Sem_Encapsulamento;
 
 public class Recibo {
     public String titular;
@@ -13,8 +13,8 @@ public class Recibo {
 
     public void imprimir() {
         System.out.println("----------");
-        System.out.printf("RECIBO PARA %s%n", titular);
+        System.out.printf("RECIBO PARA: %s%n", titular);
         System.out.printf("%s -> %.2f%n", descricao, valor);
-        System.out.println("-----------");
+        System.out.println("----------");
     }
 }

@@ -1,4 +1,4 @@
-package UNI_11.FaltaDeEncapsulamento;
+package UNI_11.Sem_Encapsulamento;
 
 public class Estabelecimento {
     public String nome;
